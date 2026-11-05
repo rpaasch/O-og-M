@@ -54,6 +54,13 @@ self.addEventListener('fetch', (event) => {
       if (res.ok && !isNav && res.type === 'basic') cache.put(req, res.clone());
       return res;
     } catch (err) {
+      // Offline: brug den forhåndsgemte (mindste) udgave af et billede.
+      const m = req.url.match(/\/media\/(.+)-\d+\.(webp|jpg)$/);
+      if (m) {
+        const alt = PRECACHE.find((p) => p.startsWith('media/' + m[1] + '-') && p.endsWith('.webp'));
+        const hitAlt = alt && await cache.match(new URL(alt, SCOPE).href);
+        if (hitAlt) return hitAlt;
+      }
       if (isNav) {
         return new Response(
           '<!doctype html><html lang="da"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
