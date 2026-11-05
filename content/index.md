@@ -1,14 +1,10 @@
 ---
 title: O&M-teknik
-description: En guide til instruktører i Orientering og Mobility.
+description: Teknikker i Orientering og Mobility – ledsageteknik, stokketeknik, trafik og offentlig transport.
 ---
 
 # O&M-teknik
 
-Velkommen til O&M-teknik – en opslagsguide til instruktører i Orientering og Mobility. Guiden beskriver grundteknikker og færden i trafik trin for trin, så du kan bruge den som støtte under undervisningen, også ude på en rute uden internet.
+O&M-teknik beskriver teknikker i Orientering og Mobility trin for trin – fra ledsageteknik og stokketeknik til krydsning af veje og offentlig transport. Guiden er tænkt som opslagsværk for instruktører og kan bruges uden internet, fx ude på en rute.
 
-![dekorativ](billeder/forside.jpg)
-
-Vælg et emne herunder, eller brug **Søg** øverst på siden til at finde en bestemt teknik.
-
-> Eksempelindhold: teksterne er pladsholdere til afprøvning af appen og skal gennemgås fagligt, før de tages i brug.
+Vælg et emne herunder, eller brug **Søg** øverst på siden.

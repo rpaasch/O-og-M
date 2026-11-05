@@ -31,25 +31,22 @@ Første indhold er **O&M-teknik**, en guide til instruktører i Orientering og M
 
 ```
 content/
-  index.md                      ← forsiden
-  90-om-appen.md                ← side direkte under forsiden
-  10-grundteknikker/            ← sektion i menuen
-    index.md                    ← intro til sektionen (anbefales – giver titlen)
-    10-stokteknik.md
-    20-diagonal-teknik.md
-    billeder/
-      stokteknik-01.jpg
-  20-faerden-i-trafik/
-    index.md
-    10-krydsning.md
-    30-offentlig-transport/     ← sektioner kan ligge i sektioner
-      index.md
-      10-bus.md
+  index.md                          ← forsiden
+  990-om-appen.md                   ← side direkte under forsiden
+  billeder/                         ← fælles billedmappe
+    foto-1240.jpg
+  10-ledsageteknik/                 ← sektion i menuen
+    index.md                        ← sektionens titel (og evt. intro)
+    010-introduktion-ledsageteknik.md
+    020-kontakt.md
+    030-grebet.md                   ← billeder: ![Foto af grebet](../billeder/foto-1240.jpg)
+  20-basisteknikker/
+    …
 ```
 
 - **Talpræfikset** (`10-`, `20-` …) styrer rækkefølgen og vises ikke. Brug spring af 10, så du kan indsætte en ny side som `15-…` senere.
 - **Mapper** er sektioner. De kan indlejres i flere niveauer.
-- **Adressen** laves ud fra filnavnet uden tal: `10-grundteknikker/10-stokteknik.md` bliver til `…/O-og-M/grundteknikker/stokteknik/`. Brug små bogstaver og bindestreger. Æ, ø og å bliver til ae, oe og aa i adressen.
+- **Adressen** laves ud fra filnavnet uden tal: `10-ledsageteknik/030-grebet.md` bliver til `…/O-og-M/ledsageteknik/grebet/`. Brug små bogstaver og bindestreger. Æ, ø og å bliver til ae, oe og aa i adressen.
 - **Mapper uden `.md`-filer**, fx `billeder/`, bliver ikke vist i menuen.
 - Navnene `soeg`, `installer`, `assets`, `media` og `icons` er reserveret af appen.
 
@@ -88,8 +85,8 @@ Brødtekst …
 Skriv almindelige relative links til `.md`-filen. De omskrives automatisk til de rigtige adresser:
 
 ```markdown
-Se [Stokteknik](../10-grundteknikker/10-stokteknik.md).
-Se [Grundteknikker](../10-grundteknikker/index.md).
+Se [Grebet](../10-ledsageteknik/030-grebet.md).
+Se [Ledsageteknik](../10-ledsageteknik/index.md).
 ```
 
 Skriv linktekster, der giver mening alene: »Se [Lysregulerede kryds](…)« og ikke »klik [her](…)«. Skærmlæserbrugere hører ofte en liste med kun linktekster. Du kan også linke til filer som PDF'er, fx `[Folder (PDF)](filer/folder.pdf)`. De kopieres med i appen.
@@ -108,7 +105,7 @@ Skriv linktekster, der giver mening alene: »Se [Lysregulerede kryds](…)« og 
 - **Billedtekst**: tekst i anførselstegn efter filnavnet vises under billedet (`<figure>`/`<figcaption>`). Billedet skal stå alene i sit afsnit, dvs. med en tom linje før og efter.
 - **Dekorative billeder** (ren pynt): skriv `dekorativ` som alt-tekst. Så får billedet `alt=""`, og skærmlæseren springer det over.
 - Vigtig information må aldrig *kun* stå i et billede. Skriv den også i teksten.
-- Læg billederne i en `billeder/`-mappe ved siden af siden. JPEG og PNG i fuld størrelse er fint. Ved build bliver de skaleret (640 og 1280 px), konverteret til WebP med JPEG-fallback og får bredde og højde. Alle billeder undtagen det første på siden indlæses først, når man scroller hen til dem.
+- Læg billederne i `content/billeder/` (eller en `billeder/`-mappe ved siden af siden). JPEG og PNG i fuld størrelse er fint. Ved build bliver de skaleret (640 og 1280 px), konverteret til WebP med JPEG-fallback og får bredde og højde. Alle billeder undtagen det første på siden indlæses først, når man scroller hen til dem.
 
 ### Advarsler ved build
 
