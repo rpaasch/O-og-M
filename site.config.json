@@ -2,7 +2,7 @@
   "appName": "O&M-teknik",
   "shortName": "O&M-teknik",
   "description": "En guide til instruktører i Orientering og Mobility (O&M).",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "basePath": "/O-og-M/",
   "themeColor": "#0b4f8a",
   "backgroundColor": "#ffffff",
@@ -10,7 +10,7 @@
   "icon": "assets/icon.svg",
   "footer": {
     "colophon": "O&M-teknik – en guide til instruktører i Orientering og Mobility.",
-    "publisher": "Udgivet af Kr. Saaby Skole"
+    "publisher": "Udgivet af IBOS – Instituttet for Blinde og Svagsynede"
   },
   "pages": {
     "search": {
