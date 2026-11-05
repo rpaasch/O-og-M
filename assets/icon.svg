@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Ikon: stiliseret person med lang stok. Hold motivet inden for den midterste cirkel (radius 205), så det også virker som "maskable" ikon. -->
+  <rect width="512" height="512" fill="#0b4f8a"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="26">
+    <circle cx="236" cy="132" r="34" fill="#ffffff" stroke="none"/>
+    <path d="M236 186 L226 296 L190 388"/>
+    <path d="M226 296 L262 388"/>
+    <path d="M232 214 L284 262 L300 270"/>
+    <path d="M232 214 L196 268"/>
+    <path d="M300 270 L360 400" stroke-width="14"/>
+  </g>
+  <path d="M332 404 a30 10 0 1 0 60 0 a30 10 0 1 0 -60 0" fill="#ffffff" opacity="0.6"/>
+</svg>

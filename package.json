@@ -1,0 +1,26 @@
+{
+  "name": "o-og-m",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpaasch/O-og-M.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpaasch/O-og-M/issues"
+  },
+  "homepage": "https://github.com/rpaasch/O-og-M#readme",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.3.3",
+    "sharp": "^0.33.5"
+  }
+}

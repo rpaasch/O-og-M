@@ -1,0 +1,23 @@
+{
+  "appName": "O&M-teknik",
+  "shortName": "O&M-teknik",
+  "description": "En guide til instruktører i Orientering og Mobility (O&M).",
+  "version": "1.0.0",
+  "basePath": "/om-teknik/",
+  "themeColor": "#0b4f8a",
+  "backgroundColor": "#ffffff",
+  "menu": "tiles",
+  "icon": "assets/icon.svg",
+  "footer": {
+    "colophon": "O&M-teknik – en guide til instruktører i Orientering og Mobility.",
+    "publisher": "Udgivet af Kr. Saaby Skole"
+  },
+  "pages": {
+    "search": { "slug": "soeg", "title": "Søg" },
+    "install": { "slug": "installer", "title": "Installér appen" }
+  },
+  "images": {
+    "widths": [640, 1280],
+    "quality": 78
+  }
+}
