@@ -1,26 +1,30 @@
 {
-  "name": "o-og-m",
+  "name": "om-teknik",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Tilgængelig, installérbar webapp (PWA) bygget fra Markdown.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rpaasch/O-og-M.git"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-2.0-or-later",
   "bugs": {
     "url": "https://github.com/rpaasch/O-og-M/issues"
   },
   "homepage": "https://github.com/rpaasch/O-og-M#readme",
   "dependencies": {
-    "archiver": "^7.0.1",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.3.3",
+    "qrcode-generator": "^1.4.4",
     "sharp": "^0.33.5"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
   }
 }
