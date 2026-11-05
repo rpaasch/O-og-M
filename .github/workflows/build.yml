@@ -1,7 +1,6 @@
-# Bygger appen ved hver ændring på main:
-#  - om-teknik-app.zip (WordPress-plugin) som download under "Actions" → kørslen → Artifacts
-#  - udgiver appen på GitHub Pages (slå til under Settings → Pages → Source: GitHub Actions)
-name: Byg app
+# Bygger appen og udgiver den på GitHub Pages ved hver ændring på main.
+# Engangsopsætning: Settings → Pages → Source: GitHub Actions.
+name: Byg og udgiv app
 
 on:
   push:
@@ -27,23 +26,15 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run plugin
-      - uses: actions/upload-artifact@v4
-        with:
-          name: om-teknik-app
-          path: om-teknik-app.zip
+      - run: npm run build
       - uses: actions/configure-pages@v5
-        continue-on-error: true
-        id: pages
       - uses: actions/upload-pages-artifact@v3
-        if: steps.pages.outcome == 'success'
         with:
           path: dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
